@@ -1,4 +1,4 @@
-const API_BASE = "https://smart-expense-splitter-eyzz.onrender.com"; // Adjust the base URL as needed
+const API_BASE = "https://smart-expense-splitter-eyzz.onrender.com/api"; // Adjust the base URL as needed
 
 async function request(path, options = {}) {
   const res = await fetch(`${API_BASE}${path}`, {
