@@ -20,8 +20,8 @@ initDB();
 
 // Routes
 app.use("/api/groups", groupRoutes);
-app.use("/api/members", memberRoutes);
-app.use("/api/expenses", expenseRoutes);
+app.use("/api", memberRoutes);
+app.use("/api", expenseRoutes);
 app.use("/api/groups", statsRoutes);
 
 // Health check
