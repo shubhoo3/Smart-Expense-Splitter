@@ -1,0 +1,51 @@
+# =========================
+# Node / Backend
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# Ignore environment files
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# Ignore SQLite database
+backend/*.db
+backend/*.sqlite
+backend/*.sqlite3
+backend/expense_splitter.db
+
+# Ignore temp & cache files
+*.tmp
+*.temp
+*.swp
+
+# =========================
+# Frontend (Vite / React)
+# =========================
+dist/
+build/
+.vite/
+.cache/
+
+# Local config files
+*.local
+*.env
+
+# =========================
+# VSCode
+# =========================
+.vscode/
+.history/
+
+# =========================
+# OS Generated Files
+# =========================
+.DS_Store
+Thumbs.db
