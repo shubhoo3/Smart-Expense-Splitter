@@ -7,11 +7,11 @@ const {
   deleteMember,
 } = require("../controllers/membersController");
 
-// /api/groups/:groupId/members
-router.get("/:groupId/members", getMembers);
-router.post("/:groupId/members", addMember);
+// members in a group
+router.get("/groups/:groupId/members", getMembers);
+router.post("/groups/:groupId/members", addMember);
 
-// /api/members/:id
-router.delete("/:id", deleteMember);
+// delete a member
+router.delete("/members/:id", deleteMember);
 
 module.exports = router;
