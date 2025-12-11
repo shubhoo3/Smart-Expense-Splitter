@@ -9,13 +9,14 @@ const {
   deleteExpense,
 } = require("../controllers/expensesController");
 
-// /api/groups/:groupId/expenses
+// group expenses
 router.get("/groups/:groupId/expenses", getGroupExpenses);
 router.post("/groups/:groupId/expenses", createExpense);
 
-// /api/expenses/:id
-router.get("/:id", getExpense);
-router.put("/:id", updateExpense);
-router.delete("/:id", deleteExpense);
+// single expense
+router.get("/expenses/:id", getExpense);
+router.put("/expenses/:id", updateExpense);
+router.delete("/expenses/:id", deleteExpense);
 
 module.exports = router;
+
